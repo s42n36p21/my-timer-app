@@ -16,33 +16,27 @@
             <div class="timer-text" id="timerText">Начать</div>
         </div>
         <div id="cycleInfo">Цикл 1/8 - Работа</div>
-        <div class="settings">
-            <h2>Настройки</h2>
-            <label>
-                Время работы (секунды): 
-                <input type="number" id="workTime" value="1500" min="1">
-            </label>
-            <label>
-                Время отдыха (секунды): 
-                <input type="number" id="restTime" value="300" min="1">
-            </label>
-            <label>
-                Количество циклов: 
-                <input type="number" id="cycleCount" value="8" min="1">
-            </label>
-            <label>
-                Начальный цвет работы: 
-                <input type="color" id="workColor" value="#00ff00">
-            </label>
-            <label>
-                Начальный цвет отдыха: 
-                <input type="color" id="restColor" value="#0000ff">
-            </label>
-            <label>
-                Конечный цвет периода: 
-                <input type="color" id="endColor" value="#ff0000">
-            </label>
-        </div>
+<div class="settings">
+    <label for="workTime">Рабочее время (N):</label>
+    <input type="number" id="workTime" value="1500">
+    
+    <label for="restTime">Время отдыха (M):</label>
+    <input type="number" id="restTime" value="300">
+
+    <label for="cycleCount">Количество циклов (K):</label>
+    <input type="number" id="cycleCount" value="8">
+
+    <label for="progressColorWork">Цвет прогресс-бара работы:</label>
+    <input type="color" id="progressColorWork" value="#00ff00">
+
+    <label for="progressColorRest">Цвет прогресс-бара отдыха:</label>
+    <input type="color" id="progressColorRest" value="#ff0000">
+
+    <label for="endColor">Конечный цвет прогресс-бара:</label>
+    <input type="color" id="endColor" value="#ff0000">
+
+    <p><a href="documentation.html">Документация по использованию</a></p> <!-- Ссылка на документацию -->
+</div>
     </div>
     <script src="script.js"></script>
 </body>
