@@ -133,7 +133,9 @@ timerButton.addEventListener('click', () => {
         timerText.textContent = isPaused ? "Пауза" : `Цикл ${currentCycle}/${cycleCount} - ${isWorkPhase ? "Работа" : "Отдых"}`;
     }
 });
-// Обработка долгого нажатия для сброса таймера timerButton.addEventListener('mousedown', () => { longPressTimer = setTimeout(resetTimer, 5000); // Запуск сброса через 5 сек удержания });
+// Обработка долгого нажатия для сброса таймера 
+timerButton.addEventListener('mousedown', () => { longPressTimer = setTimeout(resetTimer, 5000); // Запуск сброса через 5 сек удержания 
+});
 
 timerButton.addEventListener('mouseup', () => { clearTimeout(longPressTimer); // Прекращаем сброс, если кнопка отпущена раньше 
 });
