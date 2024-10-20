@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таймер циклов</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Таймер циклов</h1>
+        <div class="timer-container" id="timerButton">
+            <svg class="progress-ring" width="200" height="200">
+                <circle class="progress-ring__circle" stroke="silver" stroke-width="8" fill="transparent" r="90" cx="100" cy="100"/>
+            </svg>
+            <div class="timer-text" id="timerText">Начать</div>
+        </div>
+        <div id="cycleInfo">Цикл 1/8 - Работа</div>
+        <div class="settings">
+            <h2>Настройки</h2>
+            <label>
+                Время работы (секунды): 
+                <input type="number" id="workTime" value="1500" min="1">
+            </label>
+            <label>
+                Время отдыха (секунды): 
+                <input type="number" id="restTime" value="300" min="1">
+            </label>
+            <label>
+                Количество циклов: 
+                <input type="number" id="cycleCount" value="8" min="1">
+            </label>
+            <label>
+                Начальный цвет работы: 
+                <input type="color" id="workColor" value="#00ff00">
+            </label>
+            <label>
+                Начальный цвет отдыха: 
+                <input type="color" id="restColor" value="#0000ff">
+            </label>
+            <label>
+                Конечный цвет периода: 
+                <input type="color" id="endColor" value="#ff0000">
+            </label>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
